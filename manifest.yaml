@@ -1,6 +1,6 @@
 applications:
 - name: cf-approuter-nodejs
-  host: d043918-cf-approuter-nodejs
+  host: d043918trial-cf-approuter-nodejs
   path: ./
   buildpack: nodejs_buildpack
   memory: 250M
@@ -10,6 +10,7 @@ applications:
   timeout: 20
   env:
     NODE_ENV: production
+    TENANT_HOST_PATTERN : ^(.*)-cf-approuter-nodejs
     destinations: >
                   [
                     {"name":"ui5", "url":"https://sapui5.netweaver.ondemand.com"}

@@ -1,5 +1,5 @@
 {
-    "welcomeFile": "/web/welcome.html",
+    "welcomeFile": "/welcome.html",
     "authenticationMethod": "route",
     "sessionTimeout": 10,
     "routes": [
