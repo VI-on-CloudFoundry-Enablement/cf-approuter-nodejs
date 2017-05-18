@@ -1,6 +1,6 @@
 applications:
 - name: cf-approuter-nodejs
-  host: d043918cf
+  host: d043918-cf-approuter-nodejs
   path: ./
   buildpack: nodejs_buildpack
   memory: 250M
