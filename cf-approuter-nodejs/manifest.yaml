@@ -1,6 +1,7 @@
 applications:
-- name: cf-sample-nodejs-service
-  path: ./cf-sample-nodejs-service/
+- name: cf-approuter-nodejs
+  host: d043918cf
+  path: ./
   buildpack: nodejs_buildpack
   memory: 250M
   disk_quota: 500M
@@ -15,5 +16,4 @@ applications:
                   ]
   services:
    - uaa
-  hosts:
-   - d059251router
+  
