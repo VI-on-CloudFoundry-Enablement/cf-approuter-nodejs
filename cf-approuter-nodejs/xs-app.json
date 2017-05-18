@@ -1,0 +1,23 @@
+{
+    "welcomeFile": "/web/welcome.html",
+    "authenticationMethod": "route",
+    "sessionTimeout": 10,
+    "routes": [
+        {
+            "destination": "ui5",
+            "source": "^/resources/ui5/(.*)$",
+            "target": "$1",
+            "httpMethods": ["GET", "HEAD"]
+        },
+        {
+            "source":"^(.*)$",
+            "localDir": "public"
+        }
+    ],
+    "websockets": {
+        "enabled": true
+    },
+    "compression": {
+        "minSize": 2048
+    }
+}

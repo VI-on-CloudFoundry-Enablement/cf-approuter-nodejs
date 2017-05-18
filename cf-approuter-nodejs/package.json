@@ -1,0 +1,21 @@
+{
+  "name": "cfboilerplate.router",
+  "description": "cfboilerplate.router",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@sap/approuter": "2.7.0",
+    "semver": "5.0.1"
+  },
+  "engines": {
+    "node": "6.x.x"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "startdev": "nodemon app.js",
+    "test": "mocha --recursive --check-leaks -r should"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

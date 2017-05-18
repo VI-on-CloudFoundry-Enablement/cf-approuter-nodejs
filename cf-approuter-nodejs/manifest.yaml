@@ -1,0 +1,19 @@
+applications:
+- name: cf-sample-nodejs-service
+  path: ./cf-sample-nodejs-service/
+  buildpack: nodejs_buildpack
+  memory: 250M
+  disk_quota: 500M
+  instances: 1
+  health-check-type: port
+  timeout: 20
+  env:
+    NODE_ENV: production
+    destinations: >
+                  [
+                    {"name":"ui5", "url":"https://sapui5.netweaver.ondemand.com"}
+                  ]
+  services:
+   - uaa
+  hosts:
+   - d059251router
