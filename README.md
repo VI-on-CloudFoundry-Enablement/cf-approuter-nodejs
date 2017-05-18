@@ -4,8 +4,9 @@
 The approuter is responsible to manage the routes and the access to all other applications in a cloud foundry space. Basically every app could do the authentication check and so on by their own, but using a central app router has various benefits. 
 
 ## Prepare and Deploy
-Go into the manifest and replace the d-user with your username or an unique id
-Then build the java war package with Maven
+Go into the manifest and replace the d-user with your username or an unique id.
+
+Don't forget to create an instance of the xsuaa service. Currently it is configured that this service instance shall be named "uaa". 
 
 Then push to Cloud Foundry
 ```
